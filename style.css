@@ -22,7 +22,7 @@ body {
     bottom: 50px;
     width: 40%;
     left: 30%;
-    animation: logo 2s;
+    animation: logo 1.5s;
 }
 iframe {
     width: 100%;
