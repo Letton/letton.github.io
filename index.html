@@ -1,10 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Document</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ведьмак 3: Дикая Охота</title>
+    <link rel="shortcut icon" href="http://static.cdprojektred.com/thewitcher.com/gfx/favicons/mstile-144x144.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fonts/style.css">
+    
 </head>
 <body>
-    <p>Document</p>
+    <header id="home">
+       <div class="menu-line">
+            <div class="container">
+                    <ul>
+                        <li>
+                            <a href="#home">Главная</a>
+                        </li>
+                        <li>
+                            <a href="#trailer">Трейлер</a>
+                        </li>
+                        <li>
+                            <a href="#about">Об игре</a>
+                        </li>
+                        <li>
+                            <a href="#gallery">Фотогалерея</a>
+                        </li>
+                        <li>
+                            <a href="#int">Интересные факты</a>
+                        </li>
+                    </ul>
+            </div>
+        </div> 
+                <a href="#home"><img src="img/logo-ru.png" alt="Логотип"></a>    
+    </header>
+    <section class="first-section" id="trailer">
+        <iframe width="660" height="415"  src="https://www.youtube.com/embed/4ndIeNusRLI" frameborder="0" allowfullscreen>
+            
+        </iframe>
+        
+    </section>
+    
+    <section class="second-section" id="about">
+           
+            <span>В открытом игровом мире “Дикой Охоты” вы сами прокладываете свой путь навстречу приключениям. Вы играете за наемного охотника на чудовищ, вечного странника. Вы сами устанавливаете свои цели и выбираете ваш путь. Хотите ли вы получить вознаграждение, отправляясь за головой чудовища, которое докучает всей деревне, или поможете коварному правителю выполнить для его грязную работу – независимо от того, какое эпическое приключение вы предпочтете, “Ведьмак” предоставит вам такую возможность.</span>    
+    </section>
+    <section class="third-section" id="gallery">
+            <a href="img/screen1.jpg" target="_blank"><img src="img/screen1.jpg" alt="screen1"></a>
+            <a href="img/screen2.png" target="_blank"><img src="img/screen2.png" alt="screen2"></a>
+            <a href="img/screen3.jpg" target="_blank"><img src="img/screen3.jpg" alt="screen3"></a>
+            <a href="img/screen4.jpg" target="_blank"><img src="img/screen4.jpg" alt="screen4"></a>
+    </section>
+    
+    
+    <section class="five-section" id="int">
+       
+       <span>
+       <h1>
+          Навыки Геральта в «танце с мечом» 
+       </h1>
+         Для того, чтобы получить пример для движений Геральта в бою, был нанят профессиональный фехтовальщик. Фехтовальщик решил, что лучше всего сделать движения аналогичными танцу. Таким образом и появились ловкие движения Геральта с мечом.
+       </span> 
+       
+       <span>
+       <h1>
+           Больше, чем Скайрим
+       </h1>    
+       Сейчас не является сюрпризом то, что карта Ведьмака 3 огромна, но немногие знают – насколько она действительно большая. Вся карта Ведьмака 3 на 20% больше, чем карта Скайрима, а весит в 35 раз больше, чем карта её предшественника – Ведьмака 2. Теперь вы понимаете, почему на карте так много чертовых «?».
+       </span> 
+        
+       <span>
+       <h1>
+           Никакой поддержки от автора серии книг
+       </h1>
+          Автор серии книг о Ведьмаке, на основе которых создана игра, Анджей Сапковский, на самом деле, не играл никакой роли в том направлении, куда разработчики направили игры. Права на серию были просто-напросто выкуплены у Сапковского и ничего более.
+       </span> 
+    </section>
+    
+    <footer>
+        &copy; 2017 Letton
+    </footer>
+    
+    <!-------- Скрипты библиотеки jquery-------->
+    
+    <!-------- Библиотека jquery-------->
+    
+    <script type="text/javascript" src="js/jquery.1.7.1.min.js"></script>
+    
+    <!-------- Скрипт jquery-------->
+    
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('a[href^="#"]').click(function () { 
+			    elementClick = $(this).attr("href");
+				destination = $(elementClick).offset().top;
+				if($.browser.safari){
+				$('body').animate( { scrollTop: destination }, 700 );
+				} else {
+			    	$('html').animate( { scrollTop: destination }, 700 );
+				}
+				return false;
+		   });
+		});
+	</script>
+	
 </body>
+
 </html>
