@@ -2,7 +2,7 @@
 
 @keyframes logo {
     0% {bottom: 120vh;}
-    100% {bottom: 50px;}
+    100% {bottom: 30px;}
 }
 body {
     padding: 0;
@@ -19,6 +19,15 @@ body {
     background-position: top center;
     position: relative;
 }
+.main-head-2 {
+    width: 100%;
+    height: 100vh;
+    background-image: url(img/background.jpg);
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: top center;
+    text-align: center;
+}
 .main-head img {
     position: absolute;
     bottom: 30px;
@@ -27,13 +36,9 @@ body {
     animation: logo 1.5s;
     z-index: 0;
 }
-iframe {
-    width: 100%;
-    height: 100vh;
-}
 .mnu-line {
-    padding-top: 10px;
-    height: 50px;
+    padding-top: 15px;
+    min-height: 50px;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     position: relative;
@@ -58,5 +63,8 @@ li:last-child {
 }
 a {
     text-decoration: none;
+    color: #fa0;
 }
-
+.main-head-2 iframe {
+    margin-top: 10vh;
+}
