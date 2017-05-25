@@ -140,4 +140,9 @@ h3{
     .tilt:hover {
     transform: rotate(0deg);
     }
+    
+    h3{
+    font-family: "Comfortaa", sans-serif;
+    font-size: 2em;
+}
 }
