@@ -112,6 +112,7 @@ img {
     padding-bottom: 30px;
     transition: 1s;
 }
+
 .tilt:hover {
     transform: rotate(5deg);
 }
@@ -120,4 +121,23 @@ img {
     background-color: #e0e0e0;
     padding-top: 30px;
     padding-bottom: 30px;
+}
+
+.wd {
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+
+.wd h3{
+    font-family: "Comfortaa", sans-serif;
+    font-size: 2em;
+}
+
+@media (max-width: 767px) {
+    
+    /*Добавил это, потому что начинаются проблемы с тенью*/
+    
+    .tilt:hover {
+    transform: rotate(0deg);
+    }
 }
