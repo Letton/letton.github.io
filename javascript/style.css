@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans";
+    color: #fff;
+}
+
+#clock {
+  text-align: center;
+  margin-top: 200px;
+  font-size: 120px;
+  font-weight: 300;
+}
+
+#color {
+  text-align: center;
+}
