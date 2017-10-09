@@ -6,6 +6,9 @@ body {
     padding: 0;
     text-align: center;
 }
+h1 {
+    font-family: Roboto;
+}
 #replay {
     width: 100px;
     height: 50px;
