@@ -1,0 +1,113 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+
+*
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+	&:before, &:after
+		-webkit-box-sizing: border-box
+		-moz-box-sizing: border-box
+		box-sizing: border-box
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+html, body
+	height: 100%
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: $default-font
+	overflow-x: hidden
+	opacity: 1
+
+ul, li 
+	list-style: none
+	padding: 0
+	margin: 0
+
+#load 
+	position: absolute
+	top: 50%
+	left: 50%
+	width: 75px
+	height: 75px
+	border: 10px solid #fff
+	border-top: 10px solid $accent_dark_blue
+	border-radius: 100%
+	transform: translate(-50%, -50%)
+	animation: 1s loading infinite linear
+
+header 
+	width: 100%
+	height: auto
+	background-color: $accent
+	.slider 
+		width: 100%
+		height: 100%
+		overflow-x: hidden
+		.slider_line
+			display: table
+			position: relative
+			left: 0
+			top: 0
+			overflow: hidden
+			width: 300%
+			height: 100%
+			transition: left 0.5s
+			.slider_slide
+				width: 33.33333%
+				padding: 70px
+				background-color: #1c1c1c
+				display: table-cell
+				&:nth-child(1)
+				  background: linear-gradient(to right, #0f2652 0%, #571557 100%)
+				&:nth-child(2)
+					background: radial-gradient(to bottom, #571557 0%, #0f2652 100%)
+				&:nth-child(3)
+					background: linear-gradient(to left, #0f2652 0%, #571557 100%)
+				h2
+					margin: 0
+					text-align: center
+					line-height: 1.15em
+					font-size: 5em
+					color: #fff
+					text-shadow: 1px 1px 5px #000
+				p
+					text-align: center
+					font-size: 1.65em
+					color: #fff
+					text-shadow: 1px 1px 5px #000
+
+@import "media" 
+
+@keyframes loading
+  0%
+    transform: translate(-50%, -50%) rotate(0deg)
+  100%
+    transform: translate(-50%, -50%) rotate(360deg)
